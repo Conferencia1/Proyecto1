@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      navigatingTo="navigatingTo"
+      class="bg-gray-100">
+    <ActionBar title="Octavario" class="bg-blue-600 text-white" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <!-- Calendar Section -->
+            <Label text="Enero 2024" class="text-xl font-bold text-center mb-2" />
+            <ScrollView orientation="horizontal" class="mb-6">
+                <StackLayout orientation="horizontal">
+                    <Repeater items="{{ days }}">
+                        <Repeater.itemTemplate>
+                            <StackLayout class="mx-2 p-3 rounded-lg" backgroundColor="{{ isActive ? '#2563eb' : '#ffffff' }}">
+                                <Label text="{{ date }}" class="text-center text-lg font-bold" 
+                                       color="{{ isActive ? '#ffffff' : '#000000' }}" />
+                                <Label text="{{ day }}" class="text-center text-sm" 
+                                       color="{{ isActive ? '#ffffff' : '#6b7280' }}" />
+                            </StackLayout>
+                        </Repeater.itemTemplate>
+                    </Repeater>
+                </StackLayout>
+            </ScrollView>
+
+            <Label text="Octavario de Oración" class="text-2xl font-bold text-center mb-4" />
+            
+            <GridLayout rows="auto" columns="*, *" class="mb-4">
+                <Label text="Día 1" class="text-lg font-semibold p-2 text-center" col="0" />
+                <Label text="Día 2" class="text-lg font-semibold p-2 text-center" col="1" />
+            </GridLayout>
+
+            <GridLayout rows="auto" columns="*, *" class="mb-4">
+                <StackLayout col="0" class="m-1 p-4 bg-white rounded-lg">
+                    <Label text="Primera Oración" class="font-medium mb-2" />
+                    <Label text="Reflexión del día" textWrap="true" class="text-gray-600" />
+                </StackLayout>
+                
+                <StackLayout col="1" class="m-1 p-4 bg-white rounded-lg">
+                    <Label text="Segunda Oración" class="font-medium mb-2" />
+                    <Label text="Reflexión del día" textWrap="true" class="text-gray-600" />
+                </StackLayout>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

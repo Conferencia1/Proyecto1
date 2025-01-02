@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Home" />
+    
+    <StackLayout class="p-4">
+        <Label text="Welcome!" class="text-3xl font-bold text-center mb-4" />
+        <Label text="This is your spiritual companion app" class="text-lg text-center text-gray-600" textWrap="true" />
+    </StackLayout>
+</Page>

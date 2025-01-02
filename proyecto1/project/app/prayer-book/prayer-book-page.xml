@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Prayer Book" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Daily Prayers" class="text-2xl font-bold mb-4" />
+            
+            <StackLayout class="mb-6">
+                <Label text="Morning Prayer" class="text-xl font-semibold mb-2" />
+                <Label text="Dear Lord, thank you for this new day. Guide my steps and fill my heart with your love and wisdom." 
+                       class="text-gray-700" textWrap="true" />
+            </StackLayout>
+            
+            <StackLayout class="mb-6">
+                <Label text="Evening Prayer" class="text-xl font-semibold mb-2" />
+                <Label text="Heavenly Father, as this day comes to an end, I thank you for your protection and blessings." 
+                       class="text-gray-700" textWrap="true" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
